@@ -1,0 +1,23 @@
+import os
+# Limpa o terminal, independente se é Windows ou Linux/Mac
+os.system('cls' if os.name == 'nt' else 'clear')
+#--------------------------------------------------------------
+
+# Programa que produz uma sequência de Fibonacci
+
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+
+
+for n in range(1, 10): # Testando os 9 primeiros números:
+    print(n, "->", fib(n))
