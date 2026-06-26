@@ -1,0 +1,90 @@
+import os
+# Limpa o terminal, independente se é Windows ou Linux/Mac
+os.system('cls' if os.name == 'nt' else 'clear')
+#--------------------------------------------------------------
+
+print("Olá, Python!")
+print("Greg")
+#print(Greg) # aqui Greg seria encarado como uma variável
+#print"Greg" # erro de sintaxe, faltam os ()
+print('Greg')
+print("Greg"); print("Python")
+print("------------------------------")
+print("Python" "/" "Olá")
+print("------------------------------")
+print("A aranha pequenininha\nsubiu a tromba d'água.") #\n pula linha dentro da string
+print()
+print("abaixo veio a chuva\ne lavou a aranha.")
+print("------------------------------")
+print("A aranha pequenininha" , "subiu" , "a tromba d'água.")
+print("A aranha pequenininha " , " subiu " , " a tromba d'água.")
+print("------------------------------")
+print("Meu nome é", "Python.", end=" ") #end= retira a nova linha e escreve tudo na mesma linha. Com ou sem argumento. Implicitamente ele sempre está setado para \n, ou seja, end=\n. Por isso gera nova linha.
+print("Monty Python.")
+print("Meu nome é", "Python.", end="")
+print("Monty Python.")
+print("------------------------------")
+print("Meu", "nome", "é", "Monty", "Python.", sep="-") #sep= é o separador. Nesse caso, ao invés de espaços, temos hífens.
+print("------------------------------")
+print("Meu", "nome", "é", sep="_", end="*")
+print("Monty", "Python.", sep="/", end="~\n")
+print("------------------------------")
+print("Original Version:")
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+print("--------------------------------------")
+#########################
+print("With fewer 'print()' invocations:")
+print("    *\n   * *\n  *   *\n *     *\n***   ***")
+print("  *   *\n  *   *\n  *****")
+print("--------------------------------------")
+#########################
+print("Higher:")
+print("        *")
+print("       * *")
+print("      *   *")
+print("     *     *")
+print("    *       *")
+print("   *         *")
+print("  *           *")
+print(" *             *")
+print("******     ******")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *     *")
+print("     *******")
+print("--------------------------------------")
+#########################
+print("Doubled:")
+print("        *         "*2)
+print("       * *        "*2)
+print("      *   *       "*2)
+print("     *     *      "*2)
+print("    *       *     "*2)
+print("   *         *    "*2)
+print("  *           *   "*2)
+print(" *             *  "*2)
+print("******     ****** "*2)
+print("     *     *      "*2)
+print("     *     *      "*2)
+print("     *     *      "*2)
+print("     *     *      "*2)
+print("     *     *      "*2)
+print("     *     *      "*2)
+print("     *******      "*2)
+print("--------------------------------------")
+#Sobre Int, Float, Octal, Hexa
+print(4., 4.0) #reparar que ambas as formas denotam um float. Ele deve contar o . msm q o número após seja ZERO.
+print(0o123) #esse é um octal. A função print já converte em inteiro qnd mostra no console.
+print(0x123) #esse é um hexadecimal. A função print já converte em inteiro qnd mostra no console.
+print(3e8) #esse é um float exponencial. 3x10 elevado a 8a potência.
+print(6.62607e-34) #esse é um float exponencial. Constante de Plank, uma notação de expoente negativo.
